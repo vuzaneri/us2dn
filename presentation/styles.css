@@ -1,0 +1,463 @@
+/* ========================== CSS Reset ========================== */
+* {
+	border: 0 none;	
+	font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+/* ========================== General Styles ========================== */
+body {
+	background: url("images/bg_body.jpg") repeat top left;
+	text-align: center;
+}
+
+#wrapper {
+	margin: 0 auto;
+	text-align: left;
+	width: 940px;
+}
+
+a {
+	color: #a32626;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a.top {
+	background: url("images/bg_top.jpg") no-repeat 0% 50%;
+	color: #888;
+	font-size: 13px;
+	padding-left: 25px;
+}
+
+a.top:hover {
+	color: #bbb;
+	text-decoration: none;
+}
+
+blockquote {
+	background: url("images/blockquote.png") no-repeat top left;
+	margin-bottom: 25px;
+	padding-left: 32px;
+}
+
+blockquote p {
+	font-style: oblique;
+	margin-bottom: 5px;
+}
+
+blockquote p.author {
+	color: #666;
+	font-size: 11px;
+	font-style: normal;
+}
+
+em {
+	font-style: oblique;
+}
+
+h2 {
+	border-top: 1px solid #555;
+	color: #ddd;
+	font-size: 22px;
+	margin-bottom: 35px;
+	padding-top: 17px;
+	text-transform: uppercase;
+}
+
+h3 {
+	color: #ddd;
+	font-size: 21px;
+	margin-bottom: 20px;
+}
+
+h4 {
+	color: #ddd;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+h5 {
+	color: #ddd;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+img {
+	border: 8px solid #383838;
+	margin-bottom: 15px;
+}
+
+img.left {
+	margin: 0 20px 15px 0;
+}
+
+img.right {
+	margin: 0 0 15px 20px;
+}
+
+img.icon {
+	border: none;
+	margin: 0 12px 10px 0;
+}
+
+li {
+	background: url("images/bullet.jpg") no-repeat 0% 50%;
+	color: #888;
+	font-size: 13px;
+	line-height: 21px;
+	padding-left: 18px;
+}
+
+ol {
+	list-style-position: inside;
+	margin-bottom: 20px;
+}
+
+ol li {
+	background: none;
+	padding: 0;
+}
+
+p {
+	color: #888;
+	font-size: 13px;
+	line-height: 21px;
+	margin-bottom: 20px;
+}
+
+p.featured {
+	background-color: #333;
+	color: #d5d5d5;
+	font-size: 15px;
+	line-height: 24px;
+	padding: 15px 20px;
+	width: 180px;
+}
+
+p.featured.right {
+	margin-left: 15px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+ul {
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/* ========================== Form Elements Styles ========================== */
+label {
+	color: #888;
+	display: block;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+
+input, textarea {
+	background-color: #333;
+	border: 1px solid #555;
+	color: #bfbfbf;
+	font-size: 12px;
+	padding: 8px 10px;
+	width: 300px;
+}
+
+textarea {
+	width: 500px;
+}
+
+form > div {
+	margin-bottom: 20px;
+}
+
+form button {
+	background-color: #333;
+	color: #ddd;
+	font-size: 12px;
+	padding: 10px 12px;
+	text-transform: uppercase;
+}
+
+#note  #notification {
+	background-color: #111;
+	border: 1px solid #333;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+#note #notification p {
+	font-size: 11px;
+	margin-bottom: 4px;
+}
+
+/* ========================== Table Styles ========================== */
+table {
+	border-collapse: collapse;
+	color: #888;
+	font-size: 12px;
+	margin-top: 10px;
+	width: 100%;
+}
+
+th {
+	color: #bbb;
+	font-weight: bold;
+	padding-bottom: 15px;
+	text-align: left;
+}
+
+td {
+	border-top: 1px solid #555;
+	padding: 15px 0;
+}
+
+/* ========================== Header Styles ========================== */
+#header {
+	background: url("images/bg_header.png") no-repeat top left;
+	height: 41px;
+	overflow: hidden;
+	padding: 0 20px;
+	position: fixed;
+	top: 0;
+	width: 900px;
+	z-index: 1000;
+}
+
+#header h1 {
+	background-color: #a32626;
+	color: #eee;
+	float: left;
+	font-size: 14px;
+	height: 40px;
+	letter-spacing: 2px;
+	line-height: 40px;
+	padding: 0 16px;
+	text-transform: uppercase;
+}
+
+#header ul {
+	float: right;
+}
+
+#header ul li {
+	background: none;
+	float: left;
+	height: 40px;
+	line-height: 41px;
+	margin-left: 20px;
+	padding: 0;
+}
+
+#header ul li a {
+	color: #a2a2a2;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+#header ul li a:hover {
+	color: #d2d2d2;
+	text-decoration: none;
+}
+
+/* ========================== Intro text Styles ========================== */
+#intro {
+	color: #ddd;
+	font-size: 35px;
+	line-height: 42px;
+	margin: 79px 0 0 0;
+}
+
+/* ========================== Portfolio Styles ========================== */
+#portfolio {
+	margin-bottom: -25px;
+	overflow: hidden;
+	padding-top: 50px;
+}
+
+#portfolio li {
+	background: none;
+	float: left;
+	margin: 0 20px 20px 0;
+	padding: 0;
+	position: relative;
+	width: 220px;
+}
+
+#portfolio li.last {
+	margin-right: 0;
+}
+
+#portfolio li img {
+	border: 4px solid #222;
+	margin: 0;
+}
+
+#portfolio li img:hover, #portfolio li:hover img {
+	border: 4px solid #444;
+}
+
+#portfolio li .description {
+	background-color: #444;
+	color: #eee;
+	display: none;
+	font-size:10px;
+	padding: 8px 10px;
+	position: absolute;
+}
+
+/* ========================== Layout Styles ========================== */
+.page {
+	margin-bottom: 100px;
+	overflow: hidden;
+	padding-top: 50px;
+}
+
+.box_220, .box_300, .box_620 {
+	float: left;
+	margin-right: 20px;
+}
+
+.box_220 {
+	width: 220px;
+}
+
+.box_300 {
+	width: 300px;
+}
+
+.box_620 {
+	width: 620px;
+}
+
+.last {
+	margin-right: 0;
+}
+
+/* ========================== Details List Styles ========================== */
+.details li {
+	background: none;
+	border-bottom: 1px solid #333;
+	margin-bottom: 6px;
+	overflow: hidden;
+	padding: 0 0 6px 0;
+}
+
+.details li p, .details li img {
+	font-size: 12px;
+	margin: 0;
+}
+
+.details .left {
+	color: #eee;
+}
+
+/* ========================== Footer Styles ========================== */
+#footer {
+	background-color: #0c0c0c;
+	overflow: hidden;
+	padding: 35px 0 60px 0;
+}
+
+#footerContainer {
+	margin: 0 auto;
+	text-align: left;
+	width: 940px;
+}
+
+#footer h2 {
+	font-size: 18px;
+	margin-bottom: 18px;
+	padding-top: 14px;
+}
+
+#footer li {
+	background: none;
+	padding: 0;
+}
+
+#footer li a, #footer p {
+	color: #555;
+	font-size: 12px;
+}
+
+#footer li a:hover {
+	color: #bbb;
+	text-decoration: none;
+}
+
+/* ========================== Social List Styles ========================== */
+.social li {
+	margin-bottom: 7px;
+}
+
+.social li a {
+	background: url("images/socialIcons.png") no-repeat top left;
+	height: 16px;
+	line-height: 16px;
+	padding-left: 28px;
+}
+
+.social li a[title=Deviant Art] {
+	background-position: 0 -16px;
+}
+
+.social li a[title=Digg] {
+	background-position: 0 -32px;
+}
+
+.social li a[title=Facebook] {
+	background-position: 0 -48px;
+}
+
+.social li a[title=Flickr] {
+	background-position: 0 -64px;
+}
+
+.social li a[title=Last FM] {
+	background-position: 0 -80px;
+}
+
+.social li a[title=Linkedin] {
+	background-position: 0 -96px;
+}
+
+.social li a[title=My Space] {
+	background-position: 0 -112px;
+}
+
+.social li a[title=Skype] {
+	background-position: 0 -128px;
+}
+
+.social li a[title=Tumblr] {
+	background-position: 0 -144px;
+}
+
+.social li a[title=Twitter] {
+	background-position: 0 -160px;
+}
+
+.social li a[title=Vimeo] {
+	background-position: 0 -176px;
+}

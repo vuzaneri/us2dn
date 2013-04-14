@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Galeria. Single page gallery template</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+	<!-- jQuery Script -->
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<!-- Contact Form Script -->
+	<script type="text/javascript" src="js/form.js"></script>
+	<!-- Cufon Script -->
+	<script type="text/javascript" src="js/cufon-yui.js"></script>
+	<script type="text/javascript" src="js/nevis_700.font.js"></script>
+	<script type="text/javascript">
+		Cufon.replace('h1');
+		Cufon.replace('h2');
+		Cufon.replace('h3');
+		Cufon.replace('h4');
+		Cufon.replace('#intro');
+		Cufon.replace('#header a', {
+			hover: true
+		});
+	</script>
+	<!-- Scroll Script -->
+	<script type="text/javascript" src="js/scroll.js"></script>
+	<!-- Portfolio Effect Script -->
+	<script type="text/javascript">
+		$(function(){
+			$('#portfolio li', this ).mouseenter(function() {
+				$('.description', this).slideDown('fast');
+			});
+			$('#portfolio li', this ).mouseleave(function() {
+				$('.description', this).slideUp('fast');
+			});
+		});
+	</script>
+	<!-- PrettyPhoto Script -->
+	<link rel="stylesheet" href="prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" />
+	<script src="prettyPhoto/js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$("a[rel^='gallery']").prettyPhoto({
+				showTitle: false
+			});
+		});
+	</script>
+	<!--
+	<style type="text/css">
+		Blue Style
+		#header h1 { background-color: #007e0c; }
+		a { color: #007e0c; }
+		Green Style
+		#header h1 { background-color: #00447e; }
+		a { color: #00447e; }
+	</style>
+	-->
+</head>
+
+<body id="top">
+	<!-- BEGIN: wrapper -->
+	<div id="wrapper">
+		<!-- BEGIN: header -->
+		<div id="header">
+			<h1>Galeria</h1>
+			<ul>
+				<li><a href="#portfolio" title="Link">Portfolio</a></li>
+				<li><a href="#about" title="Link">About</a></li>
+				<li><a href="#services" title="Link">Services</a></li>
+				<li><a href="#elements" title="HTML Elements">HTML Elements</a></li>
+				<li><a href="#contact" title="Link">Contact</a></li>
+			</ul>
+		</div>
+		<!-- END: header -->
+		<!-- BEGIN: intro -->
+		<p id="intro">Welcome... this is the portfolio of Ruderic, a freelance designer based in Sydney, Australia. Take a look at his best works.</p>
+		<!-- END: intro -->
+		<!-- BEGIN: portfolio -->
+		<ul id="portfolio">
+			<li>
+				<div class="description">
+					<strong>WEB</strong> | Company Name
+				</div>
+				<a href="http://vimeo.com/10191902" title="Portfolio" rel="gallery"><img src="images/work1_thumb.jpg" alt="Portfolio" /></a>
+			</li>
+			<li>
+				<div class="description">
+					<strong>PRINT</strong> | Company Name
+				</div>
+				<a href="http://www.youtube.com/watch?v=RlDHuGp0C0k" title="Portfolio" rel="gallery"><img src="images/work2_thumb.jpg" alt="Portfolio" /></a>
+			</li>
+			<li>
+				<div class="description">
+					<strong>GRAPHIC</strong> | Company Name
+				</div>
+				<a href="images/work3.jpg" title="Portfolio" rel="gallery"><img src="images/work3_thumb.jpg" alt="Portfolio" /></a>
+			</li>
+			<li class="last">
+				<div class="description">
+					<strong>MARKETING</strong> | Company Name
+				</div>
+				<a href="images/work4.jpg" title="Portfolio" rel="gallery"><img src="images/work4_thumb.jpg" alt="Portfolio" /></a>
+			</li>
+			<li>
+				<div class="description">
+					<strong>WEB</strong> | Company Name
+				</div>
+				<a href="images/work5.jpg" title="Portfolio" rel="gallery"><img src="images/work5_thumb.jpg" alt="Portfolio" /></a>
+			</li>
+			<li>
+				<div class="description">
+					<strong>PRINT</strong> | Company Name
+				</div>
+				<a href="images/work6.jpg" title="Portfolio" rel="gallery"><img src="images/work6_thumb.jpg" alt="Portfolio" /></a>
+			</li>
+			<li>
+				<div class="description">
+					<strong>GRAPHIC</strong> | Company Name
+				</div>
+				<a href="images/work7.jpg" title="Portfolio" rel="gallery"><img src="images/work7_thumb.jpg" alt="Portfolio" /></a>
+			</li>
+			<li class="last">
+				<div class="description">
+					<strong>MARKETING</strong> | Company Name
+				</div>
+				<a href="images/work8.jpg" title="Portfolio" rel="gallery"><img src="images/work8_thumb.jpg" alt="Portfolio" /></a>
+			</li>
+			<li>
+				<div class="description">
+					<strong>WEB</strong> | Company Name
+				</div>
+				<a href="images/work1.jpg" title="Portfolio" rel="gallery"><img src="images/work1_thumb.jpg" alt="Portfolio" /></a>
+			</li>
+			<li>
+				<div class="description">
+					<strong>PRINT</strong> | Company Name
+				</div>
+				<a href="images/work2.jpg" title="Portfolio" rel="gallery"><img src="images/work2_thumb.jpg" alt="Portfolio" /></a>
+			</li>
+			<li>
+				<div class="description">
+					<strong>GRAPHIC</strong> | Company Name
+				</div>
+				<a href="images/work3.jpg" title="Portfolio" rel="gallery"><img src="images/work3_thumb.jpg" alt="Portfolio" /></a>
+			</li>
+			<li class="last">
+				<div class="description">
+					<strong>MARKETING</strong> | Company Name
+				</div>
+				<a href="images/work4.jpg" title="Portfolio" rel="gallery"><img src="images/work4_thumb.jpg" alt="Portfolio" /></a>
+			</li>
+		</ul>
+		<!-- END: portfolio -->
+		<!-- BEGIN: about -->
+		<div class="page" id="about">
+			<div class="box_940">
+				<h2>About Me</h2>
+				<img src="images/portrait.jpg" alt="Portrait" class="left" />
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque nulla aliquet ligula commodo posuere. Etiam in purus et mauris iaculis fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent sit amet est eget eros posuere mattis. Etiam eleifend malesuada elementum. Aliquam erat volutpat. Aliquam dignissim tristique orci, sit amet viverra ipsum tristique eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo dignissim diam, at bibendum arcu imperdiet non. Integer volutpat <a href="#" title="Link">nisi ut nisi consequat vestibulum</a>.  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo dignissim diam, at bibendum arcu imperdiet non. Integer volutpat nisi ut nisi consequat vestibulum.</p>
+				<p class="featured right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque nulla aliquet ligula commodo posuere.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque nulla aliquet ligula commodo posuere. Etiam in purus et mauris iaculis fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent sit amet est eget eros posuere mattis. Etiam eleifend malesuada elementum. Aliquam erat volutpat. Aliquam dignissim tristique orci, sit amet viverra ipsum tristique eu. </p>
+				<ul>
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Lorem ipsum dolor sit amet</li>
+				</ul>
+			</div>
+		</div>
+		<!-- END: about -->
+		<!-- BEGIN: services -->
+		<div class="page" id="services">
+			<div class="box_300">
+				<h2>Web Design</h2>
+				<img src="images/icon1.png" alt="Icon" class="left icon" />
+				<p>Sed semper risus id urna vehicula tempor. Praesent sem diam, sollicitudin sit amet pretium ligula pellentesque, tempus malesuada mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in metus nisi, ut gravida dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam gravida vehicula mi, eu ullamcorper.</p>
+			</div>
+			<div class="box_300">
+				<h2>Web Development</h2>
+				<img src="images/icon2.png" alt="Icon" class="left icon" />
+				<p>Sed semper risus id urna vehicula tempor. Praesent sem diam, sollicitudin sit amet pretium ligula pellentesque, tempus malesuada mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in metus nisi, ut gravida dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam gravida vehicula mi, eu ullamcorper.</p>
+			</div>
+			<div class="box_300 last">
+				<h2>Marketing</h2>
+				<img src="images/icon3.png" alt="Icon" class="left icon" />
+				<p>Sed semper risus id urna vehicula tempor. Praesent sem diam, sollicitudin sit amet pretium ligula pellentesque, tempus malesuada mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in metus nisi, ut gravida dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam gravida vehicula mi, eu ullamcorper.</p>
+			</div>
+		</div>
+		<!-- END: services -->
+		<!-- BEGIN: html elements -->
+		<div class="page" id="elements">
+			<div class="box_620">
+				<h2>HTML Elements</h2>
+				<h3>Level 3 Heading</h3>
+				<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget mi id felis rutrum dignissim vel non arcu.</strong> Nulla ac mollis massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+				<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget mi id felis rutrum dignissim vel non arcu.</em> Nulla ac mollis massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+				<h4>Level 4 Heading</h4>				
+				<ol>
+					<li>Ordered List</li>
+					<li>Pellentesque habitant morbi</li>
+					<li>Nulla ac mollis massa</li>
+					<li>Pellentesque habitant</li>
+				</ol>
+				<ul>
+					<li>Unordered List</li>
+					<li>Pellentesque habitant morbi</li>
+					<li>Nulla ac mollis massa</li>
+					<li>Pellentesque habitant</li>
+				</ul>
+				<h5>Table Example (Level 5 Heading)</h5>
+				<table>
+					<tr>
+						<th>Heading 1</th>
+						<th>Heading 2</th>
+						<th>Heading 3</th>
+						<th>Heading 4</th>
+					</tr>
+					<tr>
+						<td>Content 1</td>
+						<td>Content 2</td>
+						<td>Content 3</td>
+						<td>Content 4</td>
+					</tr>
+					<tr>
+						<td>Content 1</td>
+						<td>Content 2</td>
+						<td>Content 3</td>
+						<td>Content 4</td>
+					</tr>
+					<tr>
+						<td>Content 1</td>
+						<td>Content 2</td>
+						<td>Content 3</td>
+						<td>Content 4</td>
+					</tr>
+				</table>			
+			</div>
+			<div class="box_300 last">
+				<h2>Testimonials</h2>
+				<blockquote>
+					<p>Nulla ac mollis massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+					<p class="author">&mdash; John Doe, <a href="#" title="Link">Company Name</a></p>
+				</blockquote>
+				<blockquote>
+					<p>Nulla ac mollis massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+					<p class="author">&mdash; John Doe, <a href="#" title="Link">Company Name</a></p>
+				</blockquote>
+				<blockquote>
+					<p>Nulla ac mollis massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+					<p class="author">&mdash; John Doe, <a href="#" title="Link">Company Name</a></p>
+				</blockquote>
+			</div>
+		</div>
+		<!-- END: html elements -->
+		<!-- BEGIN: contact -->
+		<div class="page" id="contact">
+			<div class="box_620">
+				<h2>Leave me a Message</h2>
+				<div id="note"></div>
+				<form id="contactForm" action="javascript:alert('success!');">
+					<div>
+						<label for="name">Your Name:</label>
+						<input type="text" name="name" id="name" />
+					</div>
+					<div>
+						<label for="email">Your Email:</label>
+						<input type="text" name="email" id="email" />
+					</div>
+					<div>
+						<label for="subject">Subject:</label>
+						<input type="text" name="subject" id="subject" />
+					</div>
+					<div>
+						<label for="message">Your Message:</label>
+						<textarea cols="30" rows="7" name="message" id="message"></textarea>
+					</div>
+					<div>
+						<button type="submit" name="submit" id="submit">Send Message</button>
+					</div>
+				</form>
+			</div>
+			<div class="box_300 last">
+				<h2>Details</h2>
+				<ul class="details">
+					<li>
+						<img src="images/icon_mail.jpg" alt="Email" class="left icon" />
+						<p class="right"><a href="#" title="Link">youremail@gmail.com</a></p>
+					</li>
+					<li>
+						<p class="left">Phone:</p>
+						<p class="right">+653 87 9216</p>
+					</li>
+					<li>
+						<p class="left">Fax:</p>
+						<p class="right">+653 87 9216</p>
+					</li>
+					<li>
+						<p class="left">Adress:</p>
+						<p class="right">4896 Liberty St.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- END: contact -->
+	</div>
+	<!-- END: wrapper -->
+	<!-- BEGIN: footer -->
+	<div id="footer">
+		<div id="footerContainer">
+			<div class="box_220">
+				<a href="#top" title="Back to Top" class="top">Back to Top</a>
+			</div>
+			<div class="box_220">
+				<h2>Social Media</h2>
+				<ul class="social">
+					<li><a href="#" title="Delicious">Delicious</a></li>
+					<li><a href="#" title="Facebook">Facebook</a></li>
+					<li><a href="#" title="Linkedin">Linkedin</a></li>
+					<li><a href="#" title="Tumblr">Tumblr</a></li>
+					<li><a href="#" title="Twitter">Twitter</a></li>
+				</ul>
+			</div>
+			<div class="box_220">
+				<h2>Favorites</h2>
+				<ul>
+					<li><a href="#" title="Link">Envato</a></li>
+					<li><a href="#" title="Link">Themeforest</a></li>
+					<li><a href="#" title="Link">Active Den</a></li>
+					<li><a href="#" title="Link">Smashing Magazine</a></li>
+					<li><a href="#" title="Link">Ruderic Website</a></li>
+				</ul>
+			</div>
+			<div class="box_220 last">
+				<h2>Colophon</h2>
+				<p>This website was built with handcrafted xHTML and CSS. Fonts used are <a href="http://www.tenbytwenty.com/products/typefaces/nevis" title="Nevis">Nevis</a> and Lucida Sans. <a href="http://icondock.com/free/vector-social-media-icons" title="Icons">Vector Social Media Icons</a> and <a href="http://www.tutorial9.net/resources/108-mono-icons-huge-set-of-minimal-icons/" title="Icons">108 Mono Icons</a>.</p>
+			</div>
+		</div>
+	</div>
+	<!-- END: footer -->
+</body>
+</html>
